@@ -1,15 +1,20 @@
-import React, { PropsWithChildren } from "react";
-import styled from "styled-components";
+import React from "react";
+import styles from "./container.module.css";
 
-import { colors } from "../../styles/colors";
+import { motion } from "framer-motion";
 
-const StyledContainer = styled.div`
-  background-color: ${colors.primary};
-  min-height: 100vh;
-`;
+interface Props {
+  fixedPart: JSX.Element;
+  dynamicPart: JSX.Element;
+}
 
-const Container: React.FC<PropsWithChildren<any>> = ({ children }) => {
-  return <StyledContainer>{children}</StyledContainer>;
+const Container: React.FC<Props> = ({ fixedPart, dynamicPart }) => {
+  return (
+    <div className={styles.container}>
+      <div className={styles.fixed}>{fixedPart}</div>
+      <div className={styles.dynamic}>{dynamicPart}</div>
+    </div>
+  );
 };
 
 export default Container;
