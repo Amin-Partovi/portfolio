@@ -1,6 +1,11 @@
-.container{
-    height: 100%;
-    background: var(--secondary-color);
-    scroll-snap-align: start;
-   
+.container {
+  height: 100%;
+  background: var(--secondary-color);
+  scroll-snap-align: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  justify-items: start;
 }
