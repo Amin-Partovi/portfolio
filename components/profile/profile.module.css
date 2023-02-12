@@ -3,11 +3,13 @@
   right: 50%;
   top: 50%;
   transform: translate(50%, -50%);
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+
 }
 
 .border {
