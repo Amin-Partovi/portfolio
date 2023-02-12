@@ -15,7 +15,7 @@ const Profile: React.FC = () => {
         src={I}
         width={200}
         height={200}
-        alt={texts.profile}
+        alt={texts.PROFILE}
       />
     </div>
   );

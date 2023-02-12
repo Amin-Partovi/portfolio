@@ -11,10 +11,10 @@ import styles from "./social-media.module.css";
 const SocialMedia: React.FC = () => {
   return (
     <div className={styles["social-media"]}>
-      <Image src={Gmail} width={50} height={50} alt={texts.gmail} />
-      <Image src={LinkedIn} width={50} height={50} alt={texts.linkedin} />
-      <Image src={Github} width={50} height={50} alt={texts.github} />
-      <Image src={WhatsApp} width={50} height={50} alt={texts.whatsapp} />
+      <Image src={Gmail} width={50} height={50} alt={texts.GMAIL} />
+      <Image src={LinkedIn} width={50} height={50} alt={texts.LINKEDIN} />
+      <Image src={Github} width={50} height={50} alt={texts.GITHUB} />
+      <Image src={WhatsApp} width={50} height={50} alt={texts.WHATSAPP} />
     </div>
   );
 };

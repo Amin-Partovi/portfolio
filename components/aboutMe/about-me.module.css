@@ -1,4 +1,20 @@
 .container{
     height: 100%;
     scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--secondary-color);
+  
+}
+
+.about-me{
+    font-style: italic;
+    width: 400px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    
 }
