@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import Gmail from "public/set1-gmail.svg";
-import LinkedIn from "public/set1-linkedin.svg";
-import Github from "public/set1-github.svg";
-import WhatsApp from "public/set1-whatsapp.svg";
+import Gmail from "public/social/gmail.svg";
+import LinkedIn from "public/social/linkedin.svg";
+import Github from "public/social/github.svg";
+import WhatsApp from "public/social/whatsapp.svg";
 import texts from "@/texts/texts";
 
 import styles from "./social-media.module.css";
