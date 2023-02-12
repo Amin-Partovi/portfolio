@@ -5,6 +5,7 @@ const texts = {
   linkedin: "my linkedin address",
   github: "my github address",
   whatsapp: "my whatsapp number",
+  profile: "Amin Partovi",
 };
 
 export default texts;
