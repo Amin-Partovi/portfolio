@@ -4,8 +4,27 @@
   border-radius: 10px;
   align-items: center;
   padding: 20px;
-  height: fit-content;
   gap: 20px;
   background-color: var(--primary-color);
   color: var(--secondary-color);
+}
+
+.sample-work-photo {
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 20px;
+}
+
+.description {
+  font-size: 12px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  white-space: pre-wrap;
 }
