@@ -11,6 +11,7 @@
 
 .sample-work-photo {
   border-radius: 10px;
+  background-color: var(--gray-scale-00);
 }
 
 .content {
