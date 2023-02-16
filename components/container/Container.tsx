@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./container.module.css";
 
-import { motion } from "framer-motion";
 
 interface Props {
   fixedPart: JSX.Element;

@@ -1,21 +1,19 @@
-.container{
-    width: 100%;
-    height: 100vh;
-    background: var(--primary-color);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    overflow: hidden;
-    position: relative;
+.container {
+  width: 100%;
+  height: 100vh;
+  background: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  position: relative;
 }
 
-
-.fixed{
-
+.fixed {
 }
 
-.dynamic{
- 
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+.dynamic {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow: overlay;
 }
