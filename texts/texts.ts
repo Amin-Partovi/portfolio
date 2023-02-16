@@ -12,6 +12,7 @@ const texts = {
   ITS_ME: "It's Me",
   CASES: "Case Studies",
   PUBLICATIONS: "Publications",
+  PUBLISHED_BY: "Published by",
 };
 
 export default texts;

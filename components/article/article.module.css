@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  color: var(--secondary-color);
+
+}
+
+.image-box {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: pre-wrap;
+}

@@ -22,7 +22,7 @@ export default function Home() {
       fixedPart={
         <>
           <ContactMe />
-          <Profile />
+          {/* <Profile /> */}
         </>
       }
     ></Container>

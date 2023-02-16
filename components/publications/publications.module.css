@@ -7,3 +7,10 @@
 .title {
   color: var(--secondary-color);
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 20px 0;
+}
