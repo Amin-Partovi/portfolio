@@ -7,26 +7,15 @@ import WhatsApp from "public/social/whatsapp.svg";
 import texts from "@/texts/texts";
 
 import styles from "./social-media.module.css";
+import SocialMediaIcon from "./SocialMediaIcon";
 
 const SocialMedia: React.FC = () => {
   return (
     <div className={styles["social-media"]}>
-      <Image src={Gmail} width={50} height={50} alt={texts.GMAIL} priority />
-      <Image
-        src={LinkedIn}
-        width={50}
-        height={50}
-        alt={texts.LINKEDIN}
-        priority
-      />
-      <Image src={Github} width={50} height={50} alt={texts.GITHUB} priority />
-      <Image
-        src={WhatsApp}
-        width={50}
-        height={50}
-        alt={texts.WHATSAPP}
-        priority
-      />
+      <SocialMediaIcon icon={Gmail} title={texts.GMAIL} />
+      <SocialMediaIcon icon={LinkedIn} title={texts.LINKEDIN} />
+      <SocialMediaIcon icon={Github} title={texts.GITHUB} />
+      <SocialMediaIcon icon={WhatsApp} title={texts.WHATSAPP} />
     </div>
   );
 };
