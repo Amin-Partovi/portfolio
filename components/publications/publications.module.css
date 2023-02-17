@@ -1,6 +1,11 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    height: 100%;
+    scroll-snap-align: start;
+  }
+}
+
 .container {
-  scroll-snap-align: start;
-  height: 100%;
   padding: 20px;
 }
 

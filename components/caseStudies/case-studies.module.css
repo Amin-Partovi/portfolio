@@ -1,8 +1,14 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    height: 100%;
+    scroll-snap-align: start;
+    padding: 20px;
+  }
+}
+
 .container {
-  height: 100%;
   background: var(--secondary-color);
-  scroll-snap-align: start;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .title {
@@ -10,10 +16,17 @@
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  
+  }
+}
+
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 20px;
-  justify-items: start;
 }

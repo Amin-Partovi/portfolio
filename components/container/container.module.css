@@ -1,11 +1,22 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    height: 100vh;
+  }
+}
+
 .container {
   width: 100%;
-  height: 100vh;
   background: var(--primary-color);
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
   position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .fixed {

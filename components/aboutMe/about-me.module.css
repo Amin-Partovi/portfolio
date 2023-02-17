@@ -1,21 +1,32 @@
-.container{
+@media screen and (min-width: 1200px) {
+  .container {
     height: 100%;
     scroll-snap-align: start;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: var(--secondary-color);
-  
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--secondary-color);
+  margin-bottom: 50px;
+}
+
+.about-me {
+  font-style: italic;
+  width: 80%;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-me {
+    width: 50%;
+  }
 }
 
 
-.about-me{
-    font-style: italic;
-    width: 400px;
-    line-height: 30px;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 15px;
-    
-}

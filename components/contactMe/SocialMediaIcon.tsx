@@ -12,11 +12,9 @@ interface Props {
 
 const variants = {
   initial: {
-    filter: "grayscale(100%)",
-    opacity: 0.3,
+    opacity: 0.4,
   },
   hover: {
-    filter: "grayscale(5%)",
     opacity: 1,
     scale: 1.2,
     transition: { ease: "easeInOut", duration: 0.3 },
