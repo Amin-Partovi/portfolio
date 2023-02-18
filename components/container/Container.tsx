@@ -1,6 +1,6 @@
-import React from "react";
+import useScroll from "@/utils/useScroll";
+import React, { useEffect } from "react";
 import styles from "./container.module.css";
-
 
 interface Props {
   fixedPart: JSX.Element;
@@ -8,6 +8,10 @@ interface Props {
 }
 
 const Container: React.FC<Props> = ({ fixedPart, dynamicPart }) => {
+
+
+
+
   return (
     <div className={styles.container}>
       <div className={styles.fixed}>{fixedPart}</div>
