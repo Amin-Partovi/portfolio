@@ -1,20 +1,55 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 
 import ProfileSvg from "./profileSvg";
+import useView from "@/utils/useView";
 
 import styles from "./profile.module.css";
-import useView from "@/utils/useView";
+import useResponsive from "@/utils/useResponsive";
+import viewportTypes from "@/styles/viewPortTypes";
+
+const smallViewPosition = {
+  position: "static",
+  transform: "translate(0, 0)",
+};
+
+const absolutePosition = {
+  position: "absolute",
+  left: "100%",
+  top: "0%",
+  transform: "translate(-50%, 50%)",
+};
+
+const staticPosition = {
+  top: "-15%",
+  left: "50%",
+};
 
 const Profile: React.FC = () => {
   const { state } = useView();
-  const style =
-    state?.isVisible && state.visibleNode?.target.id === "about-me"
-      ? null
-      : { position: "static", transform: "translate(0, 0)" };
+  const { isVisible, visibleNode } = state;
+  const viewportType = useResponsive();
+  const largeView = viewportType === viewportTypes.LARGE;
 
+  const finalStyle = useMemo(
+    () =>
+      isVisible || visibleNode === undefined
+        ? absolutePosition
+        : staticPosition,
+    [isVisible]
+  );
+
+  const initialStyle = useMemo(
+    () => (isVisible ? staticPosition : absolutePosition),
+    [isVisible]
+  );
   return (
-    <motion.div className={styles["profile-container"]} style={style}>
+    <motion.div
+      className={styles["profile-container"]}
+      initial={largeView ? initialStyle : smallViewPosition}
+      animate={largeView ? finalStyle : smallViewPosition}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+    >
       <div className={styles.border} />
       <div className={styles.background}>
         <ProfileSvg />
