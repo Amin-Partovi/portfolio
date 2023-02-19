@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 import breakpoints from "../styles/breakpoints";
 import viewportTypes from "@/styles/viewPortTypes";
@@ -22,11 +22,11 @@ const useResponsive = () => {
     }
   }
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     checkViewPort();
   }, []);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     window.addEventListener("resize", checkViewPort);
     return () => window.removeEventListener("resize", checkViewPort);
   }, []);

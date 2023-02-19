@@ -44,17 +44,21 @@ const Profile: React.FC = () => {
     [isVisible]
   );
   return (
-    <motion.div
-      className={styles["profile-container"]}
-      initial={largeView ? initialStyle : smallViewPosition}
-      animate={largeView ? finalStyle : smallViewPosition}
-      transition={{ duration: 0.5, ease: "easeInOut" }}
-    >
-      <div className={styles.border} />
-      <div className={styles.background}>
-        <ProfileSvg />
-      </div>
-    </motion.div>
+    <>
+      {viewportType ? (
+        <motion.div
+          className={styles["profile-container"]}
+          initial={largeView ? initialStyle : smallViewPosition}
+          animate={largeView ? finalStyle : smallViewPosition}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
+          <div className={styles.border} />
+          <div className={styles.background}>
+            <ProfileSvg />
+          </div>
+        </motion.div>
+      ) : null}
+    </>
   );
 };
 
