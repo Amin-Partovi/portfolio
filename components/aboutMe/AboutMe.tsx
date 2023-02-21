@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 import texts from "@/texts/texts";
 import useView from "@/utils/useView";
+import Arrow from "public/arrow.svg";
 
 import styles from "./about-me.module.css";
 
@@ -38,6 +40,13 @@ const AboutMe: React.FC = () => {
       <motion.p variants={item} className={styles["about-me"]}>
         {texts.ABOUT_ME}
       </motion.p>
+      <motion.div
+        animate={{ scale: [1, 1.5, 1] }}
+        transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
+        className={styles["arrow-box"]}
+      >
+        <Image src={Arrow} alt="scroll down" style={{ objectFit: "contain" }} />
+      </motion.div>
     </motion.section>
   );
 };
