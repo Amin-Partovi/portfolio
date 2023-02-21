@@ -1,18 +1,25 @@
+.container {
+  display: flex;
+  position: relative;
+  height: 150px;
+}
+
 .box {
   display: flex;
-
   border-radius: 10px;
   align-items: center;
   padding: 20px;
   gap: 20px;
   background-color: rgba(250, 250, 250, 0.2);
   color: var(--primary-color);
-  
+  position: relative;
+  width: 100%;
 }
 
 .sample-work-photo {
   border-radius: 10px;
   background-color: var(--gray-scale-00);
+  transition: height 0.3s ease-in-out;
 }
 
 .content {
@@ -29,4 +36,25 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   white-space: pre-wrap;
+}
+
+.stack {
+  position: absolute;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 3px;
+  width: 300px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  white-space: nowrap;
+  padding: 2px 4px;
+  color: var(--gray-scale-00);
 }

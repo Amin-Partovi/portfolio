@@ -17,6 +17,7 @@ const CaseStudies: React.FC = () => {
             title={project.title}
             src={project.photo}
             description={project.description}
+            stack={project.stack}
           />
         ))}
       </div>
