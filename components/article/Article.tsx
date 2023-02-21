@@ -32,7 +32,7 @@ const Article: React.FC<Props> = ({
           />
         </div>
         <div className={styles.content}>
-          <h1>{title}</h1>
+          <h1 className={styles.title}>{title}</h1>
           <p className={styles.description}>{description}</p>
           {publication && (
             <span>

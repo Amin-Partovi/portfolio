@@ -1,11 +1,16 @@
-
-
 .container {
   display: flex;
   flex-direction: column;
   padding: 10px;
   gap: 10px;
   color: var(--secondary-color);
+  background-color: rgba(250, 250, 250, 0.1);
+  opacity: 0.8;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+.container:hover {
+  opacity: 1;
 }
 @media screen and (min-width: 800px) {
   .container {
@@ -30,6 +35,16 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  white-space: pre-wrap;
 }
 
 .description {
