@@ -16,13 +16,15 @@ const smallViewPosition = {
 const absolutePosition = {
   position: "absolute",
   left: "100%",
-  top: "0%",
-  transform: "translate(-50%, 50%)",
+  top: "50%",
+  transform: "translate(-50%, -50%)",
+
 };
 
 const staticPosition = {
-  top: "-15%",
+  top: "30%",
   left: "50%",
+
 };
 
 const Profile: React.FC = () => {
