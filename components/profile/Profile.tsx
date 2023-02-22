@@ -50,7 +50,7 @@ const Profile: React.FC = () => {
           className={styles["profile-container"]}
           initial={largeView ? initialStyle : smallViewPosition}
           animate={largeView ? finalStyle : smallViewPosition}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
         >
           <div className={styles.border} />
           <div className={styles.background}>
