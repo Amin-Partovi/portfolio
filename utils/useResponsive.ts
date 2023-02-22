@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useState } from "react";
 
 import breakpoints from "../styles/breakpoints";
-import viewportTypes from "@/styles/viewPortTypes";
+import viewportTypes from "@/styles/viewportTypes";
 
 type Keys = keyof typeof viewportTypes;
 type Values = typeof viewportTypes[Keys];

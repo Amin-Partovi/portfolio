@@ -1,12 +1,12 @@
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 
-import ProfileSvg from "./profileSvg";
+import ProfileSvg from "./ProfileSvg";
 import useView from "@/utils/useView";
 
 import styles from "./profile.module.css";
 import useResponsive from "@/utils/useResponsive";
-import viewportTypes from "@/styles/viewPortTypes";
+import viewportTypes from "@/styles/viewportTypes";
 
 const smallViewPosition = {
   position: "static",
@@ -48,7 +48,9 @@ const Profile: React.FC = () => {
       {viewportType ? (
         <motion.div
           className={styles["profile-container"]}
+          // @ts-ignore
           initial={largeView ? initialStyle : smallViewPosition}
+          // @ts-ignore
           animate={largeView ? finalStyle : smallViewPosition}
           transition={{ duration: 0.3, ease: "easeOut" }}
         >

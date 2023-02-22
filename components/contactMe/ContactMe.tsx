@@ -7,7 +7,7 @@ import SocialMedia from "./SocialMedia";
 import Profile from "../profile/Profile";
 import useView from "@/utils/useView";
 import useResponsive from "@/utils/useResponsive";
-import viewportTypes from "@/styles/viewPortTypes";
+import viewportTypes from "@/styles/viewportTypes";
 
 const withMargin = { marginTop: "250px" };
 const withOutMargin = { marginTop: "0" };
