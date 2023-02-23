@@ -18,13 +18,11 @@ const absolutePosition = {
   left: "100%",
   top: "50%",
   transform: "translate(-50%, -50%)",
-
 };
 
 const staticPosition = {
   top: "30%",
   left: "50%",
-
 };
 
 const Profile: React.FC = () => {
@@ -50,7 +48,7 @@ const Profile: React.FC = () => {
       {viewportType ? (
         <motion.div
           className={styles["profile-container"]}
-       ignore   // @ts-
+          // @ts-ignore
           initial={largeView ? initialStyle : smallViewPosition}
           // @ts-ignore
           animate={largeView ? finalStyle : smallViewPosition}
