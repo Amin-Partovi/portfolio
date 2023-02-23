@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
         <title>{texts.NAME}</title>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="description" content={texts.ABOUT_ME} />
         <meta
           name="keywords"

@@ -50,7 +50,7 @@ const Profile: React.FC = () => {
       {viewportType ? (
         <motion.div
           className={styles["profile-container"]}
-          // @ts-ignore
+       ignore   // @ts-
           initial={largeView ? initialStyle : smallViewPosition}
           // @ts-ignore
           animate={largeView ? finalStyle : smallViewPosition}
