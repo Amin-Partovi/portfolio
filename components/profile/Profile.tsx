@@ -1,12 +1,13 @@
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 
-import ProfileSvg from "./ProfileSvg";
+import Photo from "public/myPhoto.svg";
 import useView from "@/utils/useView";
 
 import styles from "./profile.module.css";
 import useResponsive from "@/utils/useResponsive";
 import viewportTypes from "@/styles/viewportTypes";
+import Image from "next/image";
 
 const smallViewPosition = {
   position: "static",
@@ -56,7 +57,12 @@ const Profile: React.FC = () => {
         >
           <div className={styles.border} />
           <div className={styles.background}>
-            <ProfileSvg />
+            <Image
+              src={Photo}
+              width={250}
+              alt="Amin Partovi profile photo"
+              priority
+            />
           </div>
         </motion.div>
       ) : null}
