@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 
-import Photo from "public/myPhoto.svg";
+import Photo from "public/myphoto.svg";
 import useView from "@/utils/useView";
 
 import styles from "./profile.module.css";
