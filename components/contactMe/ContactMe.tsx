@@ -37,7 +37,7 @@ const ContactMe = () => {
         transition={{ type: "spring", stiffness: 200, duration: 0.2 }}
       >
         <h1 className={styles.name}>{texts.NAME}</h1>
-        <h3 className={styles.headline}>{texts.HEADLINE}</h3>
+        <h2 className={styles.headline}>{texts.HEADLINE}</h2>
         <SocialMedia />
       </motion.div>
     </div>
