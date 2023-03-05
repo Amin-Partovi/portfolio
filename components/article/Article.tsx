@@ -29,6 +29,7 @@ const Article: React.FC<Props> = ({
             fill
             loader={() => image}
             className={styles.image}
+            sizes="150px"
           />
         </div>
         <div className={styles.content}>
